@@ -47,14 +47,14 @@ spec:
           httpGet:
             path: /health
             port: liveness-port
-          failureThreshold: 20  #initial delay seconds
-          periodSeconds: 10
+          failureThreshold: 1
+          periodSeconds: 150
         livenessProbe:
           httpGet:
             path: /health
             port: liveness-port
-          failureThreshold: 20  #initial delay seconds
-          periodSeconds: 10
+          failureThreshold: 1
+          periodSeconds: 150
 ---
 apiVersion: v1
 kind: Service
