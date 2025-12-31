@@ -12,7 +12,7 @@ properties([
 def configMap = [
   project    : "roboshop",
   component  : "shipping",
-  deploy_to: (params.deploy_to       ?: 'dev'),
+  deploy_to: (params.deploy_to       ?: '1.0'),
   appVersion : (params.appVersion)
 ]
 
