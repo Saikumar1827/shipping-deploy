@@ -1,3 +1,9 @@
-configMap:
-  CART_ENDPOINT: "cart:8080"
-  DB_HOST: "mysql"
+# configMap:
+#   CART_ENDPOINT: "cart:8080"
+#   DB_HOST: "mysql"
+
+deployment:
+  imageRepo: 324169293494.dkr.ecr.us-east-1.amazonaws.com/roboshop/shipping
+  imageVersion: IMAGE_VERSION
+service:
+  servicePort: 8080 # default value
